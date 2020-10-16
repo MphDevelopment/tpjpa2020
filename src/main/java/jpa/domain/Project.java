@@ -44,7 +44,7 @@ public class Project {
 		this.employees = employees;
 	}
 	
-	@OneToMany(mappedBy = "employee", cascade = CascadeType.REMOVE)
+	@OneToMany(mappedBy = "project", cascade = CascadeType.REMOVE)
 	public List<Task> getTasks() {
 		return tasks;
 	}
